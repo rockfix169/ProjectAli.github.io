@@ -19,3 +19,6 @@ img {
   object-fit: cover;
 }
 
+.carousel-inner img {
+max-height:85vh;
+}
