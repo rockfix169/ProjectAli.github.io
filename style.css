@@ -20,5 +20,38 @@ img {
 }
 
 .carousel-inner img {
-max-height:85vh;
+}
+
+.carousel-control-next {
+  background-color: lightgray; /* Set the background color to blue */
+  border-color: lightgray; /* Set the border color to blue */
+}
+.carousel-control-next:hover {
+  background-color: darkgray; /* Set the background color to a darker shade of blue on hover */
+  border-color: darkgray; /* Set the border color to a darker shade of blue on hover */
+}
+.carousel-control-next:focus {
+  box-shadow: none; /* Remove the default box-shadow on focus */
+  background-color: gray; /* Set the background color to blue on focus */
+  border-color: gray; /* Set the border color to blue on focus */
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M1.707 0.293c-.39.39-.39 1.024 0 1.414L4.586 4 1.707 6.879c-.39.39-.39 1.024 0 1.414.39.39 1.024.39 1.414 0L7.707 4.707c.39-.39.39-1.024 0-1.414L3.12.293c-.39-.39-1.024-.39-1.414 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev {
+  background-color: lightgray; /* Set the background color to blue */
+  border-color: lightgrey; /* Set the border color to blue */
+}
+.carousel-control-prev:hover {
+  background-color: darkgray; /* Set the background color to a darker shade of blue on hover */
+  border-color: darkgray; /* Set the border color to a darker shade of blue on hover */
+}
+.carousel-control-prev:focus {
+  box-shadow: none; /* Remove the default box-shadow on focus */
+  background-color: gray; /* Set the background color to blue on focus */
+  border-color: gray; /* Set the border color to blue on focus */
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M6.293 0.293c.39.39.39 1.024 0 1.414L3.414 4l2.879 2.879c.39.39.39 1.024 0 1.414-.39.39-1.024.39-1.414 0L.293 4.707c-.39-.39-.39-1.024 0-1.414L4.879.293c.39-.39 1.024-.39 1.414 0z'/%3e%3c/svg%3e");
 }
