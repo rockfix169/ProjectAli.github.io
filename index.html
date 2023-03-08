@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    
     <!-- link to local css file -->
     <link rel="stylesheet" href="style.css">
 <head>
@@ -14,22 +15,36 @@
     <link rel="icon" href="mount1.jpg" type="image/jpg">
 </head>
 <body>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav id="menu-eng" class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand"  href="#">
         <img src="Signa.svg" alt="ALAMEEN LTD Company Logo" class="circular-image img-fluid" ID="logo11">
       </a>
       <div class="language-buttons">
-        <button class="btn btn-link btn-light text-dark"><a class="fw-bold"  style="text-decoration: none;"> EN </a></button>
+        <button id="english-button" class="btn btn-link btn-light text-dark"><a class="fw-bold"  style="text-decoration: none;"> EN </a></button>
         <span class="separator text-light">|</span>
-        <button class="btn btn-link btn-light text-dark"><a href="" class="fw-bold"  style="text-decoration: none;"> AR </a></button>
+        <button  id="arabic-button" class="btn btn-link btn-light text-dark"><a href="" class="fw-bold"  style="text-decoration: none;"> AR </a></button>
       </div>
     </div>
   </nav>
-  
+  <nav id="menu-ara" class="navbar navbar-dark bg-dark" style="display: none;">
+    <div class="container-fluid">
+      <div class="language-buttons">
+        <button id="arabic-button" class="btn btn-link btn-light text-dark"><a href="" class="fw-bold"  style="text-decoration: none;"> AR </a></button>
+        <span class="separator text-light">|</span>
+        <button id="english-button" class="btn btn-link btn-light text-dark"><a class="fw-bold"  style="text-decoration: none;"> EN </a></button>
+      </div>
+      <a class="navbar-brand"  href="#">
+        <img src="Signa.svg" alt="ALAMEEN LTD Company Logo" class="circular-image img-fluid" ID="logo11">
+      </a>
+      
+    </div>
+  </nav>
+  <button class="english-button">English</button>
+  <button class="arabic-button">العربية</button>
   <div class="container-fluid">
     <div class="row container-fluid d-block m-auto text-center">
-      <div class="bg-light h5 mt-4 mb-4" style="text-align: justify;border-radius:10%;">
+      <div id="menu-eng" class="bg-light h5 mt-4 mb-4" style="text-align: justify;border-radius:10%;">
         <p>
           AlAmeen Limited Company is a top Turkish exporter, known for our trademark RockFix. Our high-quality car parts, including maintenance products such as Silicone, Metal Pu Sealant, and Gasket Maker, keep your vehicle running smoothly and efficiently.
         </p>
@@ -38,10 +53,23 @@
         </p>
 
       </div>
+      <div id="menu-ara" class="bg-light h5 mt-4 mb-4" style="text-align: justify;border-radius:10%;display: none;" dir="rtl">
+        <p>
+          شركة الأمين المحدودة هي واحدة من أهم المصدرين التركيين، معروفة بعلامتنا التجارية "RockFix". تتميز قطع سياراتنا عالية الجودة، بمنتجات الصيانة مثل السيليكون والمواد اللاصقة العالية الجودة وصانع الجوانات، بإبقاء مركبتك تعمل بسلاسة وكفاءة.
+        </p>
+        <p>
+          نقدم أيضًا مجموعة واسعة من منتجات البناء، مثل أقفال الأبواب اليدوية والحاسوبية، التي تضمن السلامة والراحة لمنزلك أو عملك. في الأمين، نحن ملتزمون بتقديم جودة لا مثيل لها ورضا العملاء. تواصل معنا لمعرفة المزيد عن منتجاتنا ورفع مستوى أمان سيارتك ومبناك.
+        </p>
 
-      <div class="row">
-        <div class="col-xl-3 col-lg-3 col-md-3 col-5 bg-info h4" style="padding:1.5%;margin-left:1.5%; border-radius: 6%;">
+      </div>
+
+      <div class="container-fluid">
+        <div id="menu-eng" class="col-xl-3 col-lg-3 col-md-3 col-5 bg-info h4" style="padding:1.5%;margin-left:1.5%; border-radius: 6%;">
           maintenance products
+        </div>
+        <span></span>
+        <div id="menu-ara" class="col-xl-3 col-lg-3 col-md-3 col-5 bg-info h4 float-end" style="padding:1.5%;margin-left:1.5%; border-radius: 6%; display:none" dir="rtl">
+          منتجات الصيانة
         </div>
       </div>
       <div class="row mb-4">
@@ -84,13 +112,13 @@
       </div>
   </div>
   <footer>
-    <div class="container-fluid card-footer " >
-      <div class="row">
-        <div class="col-xl-5 col-lg-6 col-md-8 col-11">
+    <div class="container-fluid card-footer " 
+      <div  id="menu-eng" class="row">
+        <div class="mt-4 col-xl-5 col-lg-6 col-md-8 col-11 mb-5">
           <p class="text-primary h4">ALAMEEN LTD</p>
           <p class="h6 text-black mb-4" style="text-align: justify;">At ALAMEEN LTD., we specialize in exporting high-quality car parts and maintenance products, such as Silicone, Metal Pu Sealant, and Gasket Maker. Our product line also includes top-of-the-line building products and door locks with manual and computerized keys. We are committed to providing our customers with top-notch products that meet their satisfaction and quality standards, making us a trusted and reliable name in the industry.</p>
           <div class="row ">
-            <p class="h4 text-primary mb-3">
+            <p class="h4 text-primary mb-3" style="text-align: justify;">
               Get in touch with us to learn about our full range of products and services! 
             </p>
             <div class="col-5">
@@ -111,8 +139,13 @@
             </div>
           </div>
         </div>
+        <div class="d-block container-fluid m-auto">
+          <div class="text-center h6 fw-bolder mb-5">
+            © 2023 AlAMEEN LTD. All rights reserved.
+          </div>
+        </div>
       </div>
-      <div class="row h6 mt-3">
+      <!-- <div class="row h6 mt-3">
         <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-6">
           <h5>Company</h5>
           <ul class="list-unstyled">
@@ -128,8 +161,8 @@
             <li><a href="#">Car Parts</a></li>
             <li><a href="#">Car Maintenance Product</a></li>
             <li><a href="#">Construction</a></li>
-            <!-- <li><a href="#">Plumbing</a></li>
-            <li><a href="#">Painting</a></li> -->
+            <li><a href="#">Plumbing</a></li>
+            <li><a href="#">Painting</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-6">
@@ -141,10 +174,91 @@
             <li><a href="#">LinkedIn</a></li>
           </ul>
         </div>
+      </div> -->
+    </div>
+    <div id="menu-ara" class="container-fluid card-footer float-end " dir="rtl" style="display: none;">
+      <div >
+        <div class="mt-4 col-xl-5 col-lg-6 col-md-8 col-11 mb-5">
+          <p class="text-primary h2 fw-bolder">شركة الأمين </p>
+          <p class="h6 text-black mb-4" style="text-align: justify;">
+            شركة الأمين المحدودة هي واحدة من أبرز المصدرين التركيين، معروفة بعلامتنا التجارية "RockFix". تتخصص الشركة في إنتاج قطع غيار السيارات عالية الجودة، بما في ذلك المنتجات الصيانية مثل السيليكون ومانع تسرب المعدن البولي يوريثين ومانع تسرب الجازكيت لتحسين أداء السيارة وتعزيز عمرها الافتراضي.
+
+            كما نقدم مجموعة واسعة من منتجات البناء، مثل أقفال الأبواب اليدوية والحاسوبية، لضمان الأمان والراحة لمنزلك أو عملك. في الأمين، نحن ملتزمون بتقديم جودة لا مثيل لها ورضا العملاء. اتصل بنا لمعرفة المزيد عن منتجاتنا وتعزيز أمان سيارتك ومبناك.
+            </p>
+          <div class="row ">
+            <p class="h5 text-primary mb-3" style="text-align: justify;">
+              اتصل بنا الآن للاستفسار عن كافة منتجاتنا وخدماتنا
+            ! نحن مستعدون لتلبية جميع احتياجاتك ونسعد بتقديم المساعدة في أي وقت. لا تتردد في التواصل معنا
+            </p>
+            <div class="col-5">
+              <img src="Signa.svg" alt="ALAMEEN logo" class="d-block img-fluid" >
+            </div>
+            <div class="col-7 h6 ms-0 fw-bold" style="border-right: 2px solid;">
+              <p class="h5 fw-bold">
+                الأمين للتجارة الخارجية
+                <br> ش.ذ.م.م
+
+              </p>
+              <p class="fw-bolder h5" style="text-align: justify;">
+                العنوان 
+                </p>
+                <p dir="ltr" style="text-align: justify;"> 
+                <a href="https://www.google.com/maps/place/Concepta+Plaza/@41.0163855,28.6468666,17z/data=!4m5!3m4!1s0x0:0x20569c421a313ef9!8m2!3d41.0168348!4d28.6465769" >
+                Cumhuriyet mah. Şehitler cad. 9/1 concepta plaza B.blok 10.kat Ofis no 44 Esenyurt - istanbul
+              </a>
+              </p>
+              
+              <p class="fw-bolder h5">البريد الإلكتروني 
+              </p>
+              <p dir="ltr">
+                <a href="mailto:contact@amin-ltd.com">contact@amin-ltd.com</a>
+              </p>
+              <p class="fw-bolder h5"> الهاتف 
+                </p>
+                <p dir="ltr">
+                <a href="tel:+905465103213" dir="ltr">546 510 32 13</a> - <a href="tel:+905050357000" dir="ltr">5050 35 7000</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class=" mt-4 d-block text-center container-fluid m-auto">
+          <div class="h5 mb-5">
+            حقوق النشر © 2023 شركة الأمين
+          </div>
+        </div>
       </div>
+      <!-- <div class="row h6 mt-3">
+        <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-6">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-2 col-sm-5 col-7">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Car Parts</a></li>
+            <li><a href="#">Car Maintenance Product</a></li>
+            <li><a href="#">Construction</a></li>
+            <li><a href="#">Plumbing</a></li>
+            <li><a href="#">Painting</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-6">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div> -->
     </div>
   </footer>
-
+  <script src="lang.js"></script>
 </body>
 
 </html>
