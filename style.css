@@ -85,3 +85,11 @@ a:hover {
   text-color: #6d0c0c;
   background-color: #fff2f2;
 }
+
+
+div.background {
+  background-image: url("./mount.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
